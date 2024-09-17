@@ -43,6 +43,10 @@ Before we can get started working with data, we first need to load the data into
 in many file types, but the most common is a CSV, which stands for “comma-separated values”. Use the
 `read.csv()` function from the R package `readr` to read your data into R and call it `anrr`. You'll find the dataset under the folder `data`. This is the original data used in their study.
 
+```{r}
+library(readr)
+anrr <- read_csv("data/section1_df.csv") 
+```
 
 
 
@@ -51,6 +55,9 @@ in many file types, but the most common is a CSV, which stands for “comma-sepa
 Use the `head()` function to view the first several rows of the data. What can you notice about the variable `gdppc`?
 
 
+```{r}
+head(anrr)
+```
 
 
 ## Question 3: Inspecting the dataset II
@@ -58,6 +65,10 @@ Use the `head()` function to view the first several rows of the data. What can y
 Use the function `glimpse()` to look at a summary of the dataset. What can you notice about the variable `dem`?
 
 
+```{r}
+library(dplyr)
+glimpse(anrr)
+```
 
 
 
